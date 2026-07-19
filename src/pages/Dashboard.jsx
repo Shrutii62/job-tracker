@@ -1,8 +1,28 @@
+import JobColumn from "../components/JobColumn";
+import Navbar from "../components/Navbar";
+import "./Dashboard.css";
+
 const Dashboard = () => {
-    return (
-        <>
-            <h1>Dashboard</h1>
-        </>
-    )
-}
-export default Dashboard
+  const columns = [
+    "Applied",
+    "Resume Viewed",
+    "Reverted",
+    "Shortlisted",
+    "Interview",
+    "HR Round",
+    "Offer",
+    "Rejected",
+  ];
+  return (
+   <div className="dashboard">
+  <Navbar />
+
+  <div className="board">
+    {columns.map((col) => (
+      <JobColumn key={col} colName={col} />
+    ))}
+  </div>
+</div>
+  );
+};
+export default Dashboard;

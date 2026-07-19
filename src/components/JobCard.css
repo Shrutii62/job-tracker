@@ -1,0 +1,25 @@
+.job-card {
+  background: #f8fafc;
+  border-left: 5px solid #3b82f6;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  cursor: grab;
+  transition: 0.3s;
+}
+
+.job-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.job-card h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.job-card p {
+  margin-top: 8px;
+  color: #666;
+  font-size: 14px;
+}
